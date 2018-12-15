@@ -53,3 +53,7 @@ h6 {
 .btn {
 	font-family: 'Vazir', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+pre, pre.prettyprint {
+    direction: ltr;
+	text-align: left;
+}
