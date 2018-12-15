@@ -22,7 +22,7 @@
                             <h3 class="post-subtitle">@lead</h3>
                         }
                     </a>
-                    <p class="post-meta">منتشر شده در @(PersianDateTimeFormat.Format(post.Get<DateTime>(BlogKeys.Published), "g", true))</p>
+                    <p class="post-meta">منتشر شده در @(PersianDateTimeFormat.Format(post.Get<DateTime>(BlogKeys.Published), "dd MMMM yyyy", true))</p>
                     @if(Context.Bool(BlogKeys.IndexFullPosts))
                     {
                         @Html.Raw(post.Content)

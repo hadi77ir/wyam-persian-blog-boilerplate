@@ -13,7 +13,7 @@
                     <h4 class="post-subtitle">@lead</h4>
                 }
             </a>
-            <p class="post-meta">منتشر شده در @(PersianDateTimeFormat.Format(post.Get<DateTime>(BlogKeys.Published),"g",true))</p>      
+            <p class="post-meta">منتشر شده در @(PersianDateTimeFormat.Format(post.Get<DateTime>(BlogKeys.Published),"dd MMMM yyyy",true))</p>      
             @if(Context.Bool(BlogKeys.ArchiveExcerpts))
             {
                 @Html.Raw(post.String(BlogKeys.Excerpt))

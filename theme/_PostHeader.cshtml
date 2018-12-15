@@ -13,7 +13,7 @@
     <div class="meta">        
         @if (Published != default(DateTime))
         {
-            <details>منتشر شده در @(PersianDateTimeFormat.Format(Published, "g", true))<br></details>
+            <time>منتشر شده در @(PersianDateTimeFormat.Format(Published, "dd MMMM yyyy HH:mm", true))<br /></time>
         }
     </div>
     @if (Tags != null)

@@ -48,6 +48,8 @@ h6 {
 	font-family: 'Vazir', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .pager li > a,
-.pager li > span {
+.pager li > span,
+.intro-header .post-heading .meta,
+.btn {
 	font-family: 'Vazir', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
