@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir-WOL.eot');
+    src: url('../fonts/Vazir-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-WOL.woff2') format('woff2'),
+         url('../fonts/Vazir-WOL.woff') format('woff'),
+         url('../fonts/Vazir-WOL.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir-Thin-WOL.eot');
+    src: url('../fonts/Vazir-Thin-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Thin-WOL.woff2') format('woff2'),
+         url('../fonts/Vazir-Thin-WOL.woff') format('woff'),
+         url('../fonts/Vazir-Thin-WOL.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir-Bold-WOL.eot');
+    src: url('../fonts/Vazir-Bold-WOL.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Bold-WOL.woff2') format('woff2'),
+         url('../fonts/Vazir-Bold-WOL.woff') format('woff'),
+         url('../fonts/Vazir-Bold-WOL.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+	font-family: 'Vazir', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Vazir', 'Lora', 'Times New Roman', serif;
+}
+.navbar-custom {
+	font-family: 'Vazir', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.intro-header .site-heading .subheading,
+.intro-header .page-heading .subheading,
+.intro-header .post-heading .subheading {
+	font-family: 'Vazir', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.pager li > a,
+.pager li > span {
+	font-family: 'Vazir', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

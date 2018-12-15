@@ -1,0 +1,29 @@
+#a PersianDateTimeFormat.dll
+#recipe Blog
+
+using Wyam.Web;
+using Wyam.Web.Pipelines;
+
+
+// Customize your settings and add new ones here
+Settings[Keys.Host] = "example.com";
+Settings[BlogKeys.Title] = "سایت نمونه";
+Settings[BlogKeys.Description] = "توضیح سایت";
+// Settings[BlogKeys.Image] = "/assets/background.jpg";
+
+
+// Pipeline Customizations
+Pipelines.Remove("BlogArchive");
+Pipelines.Add(new ConditionalPipeline(
+            ctx => ctx.Bool(BlogKeys.GenerateArchive),
+            new Archive(
+                "BlogArchive",
+                new ArchiveSettings
+                {
+                    Pipelines = new string[] { "BlogPosts" },
+                    TemplateFile = ctx => "_Archive.cshtml",
+                    Layout = "/_Layout.cshtml",
+                    PageSize = ctx => ctx.Get(BlogKeys.ArchivePageSize, int.MaxValue),
+                    Title = (doc, ctx) => "بایگانی",
+                    RelativePath = (doc, ctx) => $"{ctx.DirectoryPath(BlogKeys.PostsPath, ".").FullPath}"
+                })));

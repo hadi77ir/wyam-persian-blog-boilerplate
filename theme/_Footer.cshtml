@@ -1,0 +1,20 @@
+<div class="container">
+        <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright text-muted">
+                        Copyright © @DateTime.Now.Year
+                    </p>
+                    <p class="text-muted">
+                        @if (Context.String(BlogKeys.RssPath) != null) {
+                            <a href="@Context.GetLink(Context.String(BlogKeys.RssPath))"><i class="fa fa-rss"></i> خوراک RSS</a>
+                        } 
+                        @(Context.String(BlogKeys.RssPath) != null && Context.String(BlogKeys.AtomPath) != null ? "|" : "")
+                        @if (Context.String(BlogKeys.AtomPath) != null) { 
+                            <a href="@Context.GetLink(Context.String(BlogKeys.AtomPath))"><i class="fa fa-rss"></i> خوراک Atom</a>
+                        }
+                        <br />
+                        <strong><a href="https://wyam.io">تولید شده با افتخار با Wyam</a></strong>
+                    </p>
+                </div>
+        </div>
+</div>
